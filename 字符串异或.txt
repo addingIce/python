@@ -1,0 +1,8 @@
+#字符串的异或操作
+#ord 和chr 新函数的学习 将字符和ASCII相互转换
+def stringxor(str1,str2):
+    orxstr=""
+    for i in range(0,len(str1)-1):
+        rst=ord(list(str1)[i])^ord(list(str2)[i])
+        orxstr=orxstr+ chr(rst)
+    return orxstr
